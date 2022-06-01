@@ -28,9 +28,6 @@ export const UploadReceipt = ({ receiptData, setReceiptData, className }) => {
             console.log(respons);
 
             const receiptValue = respons.data.values;
-            console.log(typeof receiptValue);
-            console.log("from uploadreceipt");
-            console.log(receiptValue);
             setReceiptData(() => receiptValue);
             setIsLoading(() => false);
           })

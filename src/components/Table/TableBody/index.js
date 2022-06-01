@@ -1,12 +1,15 @@
 const TableBody = ({ tableData, columns }) => {
-  console.log(tableData);
   return (
     <tbody>
       {tableData.map((data, index) => {
         return (
           <tr key={index}>
-            <td>{data.expenseDate}</td>;<td>{data.title}</td>;
-            <td>{data.amount}</td>;
+            <td>{data.event_name}</td>
+            <td>{data.event_category}</td>
+            <td>{data.event_action}</td>
+            <td>{data.event_label}</td>
+            <td>{data.event_property}</td>
+            <td>{data.event_value}</td>
           </tr>
         );
       })}
