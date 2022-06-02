@@ -4,6 +4,7 @@ const TableBody = ({ tableData, columns }) => {
       {tableData.map((data, index) => {
         return (
           <tr key={index}>
+            <td>{data.createdAt}</td>
             <td>{data.event_name}</td>
             <td>{data.event_category}</td>
             <td>{data.event_action}</td>

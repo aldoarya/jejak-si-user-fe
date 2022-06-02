@@ -4,6 +4,7 @@ import TableHead from "./TableHead";
 
 const Table = ({ data }) => {
   const columns = [
+    { label: "Date", accessor: "date", sortable: true },
     { label: "Event Name", accessor: "date", sortable: true },
     { label: "Event Category", accessor: "item", sortable: false },
     { label: "Event Action", accessor: "expense", sortable: true },
